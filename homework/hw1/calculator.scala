@@ -29,9 +29,23 @@ args match {
 
 // Initialize variables num1, op and num2 based on the values in the args array.
 
+val num1 = args(0).toInt: Int
+val op = args(1)
+val num2 = args(2).toInt: Int
+
 // Obtain a result by using the string name of the operator to choose
 // which arithmetic operation to use.
 
+val func = op match {
+  case "plus" => (x:Int,y:Int) => (x + y).toFloat
+  case "minus" => (x:Int,y:Int) => (x - y).toFloat
+  case "times" => (x:Int,y:Int) => (x * y).toFloat
+  case "div" => (x:Int,y:Int) => x / y.toFloat
+}
+val result = func(num1, num2)
+
 // Print the result.
+
+println("%d %s %d = %f".format(num1, op, num2, result))
 
 

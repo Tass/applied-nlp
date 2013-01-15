@@ -11,10 +11,23 @@ if (args.length != 1 || !IntegerPattern.pattern.matcher(args(0)).matches) {
 
 // Obtain the number, converting it from a String to an Int.
 
+val limit = args(0).toInt
+
 // Check that the number is in the right range. If it isn't, print a
 // warning message and exit.
 
+if (limit <= 0) {
+  println("Please supply a number greater than or equal to 0.")
+  System.exit(1) // 0 means success
+}
+
 // Compute the factorial using recursion.
+
+def factorial(limit: Int): Int = limit match {
+  case 1 => 1
+  case n => n * factorial(n-1)
+}
 
 // Print the result
 
+println("%d! = %d".format(limit, factorial(limit)))

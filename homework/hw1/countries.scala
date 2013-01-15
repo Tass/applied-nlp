@@ -9,15 +9,30 @@ val SouthAmerica =
 ////////////////////////////////////////////////////////////////////////
 // Start your work here
 
+val continents = List(("NorthAmerica", NorthAmerica), ("SouthAmerica", SouthAmerica))
+
 // Get the arguments from the command line, convert them to a sorted
 // List that is stored in the variable "countries" and print them.
 println("Part (a)")
+
+val countries = args.sorted
+println("Considering: " + args.mkString(" "))
 
 // For each test country, see whether it is in North America, South
 // America, or if we don't have any information about it (i.e. it is
 // an "unknown" country).
 println("\nPart (b)")
+        
+val locations = countries.map((country) => (country, continents.find((continent) => continent._2.contains(country)).map(_._1)))
+
+locations.foreach({case (country, continent) =>
+                   println("%s: %s".format(country, continent match {
+                     case Some(x) => x
+                     case None => "???"
+                   }))})        
 
 // Print out how many unknown countries were given. Make sure that
 // you deal with English agreement appropriately.
 println("\nPart (c)")
+
+println("There were %d unknown countries.".format(locations.count({case(country, continent) => continent.isEmpty})))
