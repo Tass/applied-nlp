@@ -3,7 +3,7 @@
 val IntegerPattern = """-?\d+""".r
 if (args.length != 1 || !IntegerPattern.pattern.matcher(args(0)).matches) {
   println("Incorrect arguments to variables.scala. Please provide one integer.")
-  System.exit(0)
+  System.exit(1)
 }
 
 ////////////////////////////////////////////////////////////////////////
