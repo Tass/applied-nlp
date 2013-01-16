@@ -6,17 +6,18 @@ I did not dare to go back towards the pit, but I felt a passionate longing to pe
 
 // Start your work here. Don't change the lines that print Part (a), etc.
 
-
+val words = wotwRaw.split(' ').toList
 
 // Part (a)
 println("\nPart (a)")
-
+println("Number of words ending in 'ing': %d".format(words.count(_.endsWith("ing"))))
 
 // Part (b)
 println("\nPart (b)")
-
+val chopped = words.map(_.dropRight(2))
+println(chopped.mkString(" "))
 
 // Part (c)
 println("\nPart (c)")
-
-
+val prob = words.sliding(2).count(_ == List("at", "the")) / words.count(_ == "the").toFloat
+println("P(the|at) = %f".format(prob))
