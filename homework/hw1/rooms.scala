@@ -23,7 +23,7 @@ val roomNumbers = defaultRoomNumbers ++ filterOnIndex(args.toList, (_ % 2 == 0))
 // alphabetically by name.
 println("\nPart (a)")
 
-roomNumbers.toList.sorted.foreach({case (name, number) => println("%s: Room %s".format(name, number))})
+roomNumbers.toList.sortBy(_._2).foreach({case (name, number) => println("%s: Room %s".format(name, number))})
 
 // Create a new Map roomsToPeople that maps room numbers to lists of
 // the people who are in them.
@@ -34,4 +34,4 @@ val roomsToPeople = roomNumbers.toList.map({case (k, v) => ((v, k))})
 // For each room, print the list of who is in it.
 println("\nPart (b)")
 
-roomsToPeople.toList.foreach({case (number, names) => println("Room %s: %s".format(number, names.reverse.mkString(",")))})
+roomsToPeople.toList.sortBy(_._1).foreach({case (number, names) => println("Room %s: %s".format(number, names.reverse.mkString(",")))})
