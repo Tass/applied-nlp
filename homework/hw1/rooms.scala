@@ -6,7 +6,7 @@ val defaultRoomNumbers = Map("Sam" -> "312", "Ted" -> "325", "Jane" -> "312")
 // Check that there are an even number of command line
 // arguments. Print a warning and exit if there aren't.
 if (args.length % 2 != 0) {
-  println("Please supply an even number of arguments.")
+  System.err.println("Please supply an even number of arguments.")
   System.exit(1)
 }
 

@@ -3,7 +3,7 @@
 // of code.)
 val IntegerPattern = """-?\d+""".r
 if (args.length != 2 || args.exists(arg => !IntegerPattern.pattern.matcher(arg).matches)) {
-  println("Incorrect arguments to variables.scala. Please provide two integers.")
+  System.err.println("Incorrect arguments to variables.scala. Please provide two integers.")
   System.exit(1)
 }
 
@@ -19,7 +19,7 @@ val numbers = args.map(_.toInt)
 // isn't, print a warning message and exit.
 
 if (numbers(0) > numbers(1)) {
-  println("Please make sure that the first number is smaller than the second.")
+  System.err.println("Please make sure that the first number is smaller than the second.")
   System.exit(1) // 0 means success
 }
 

@@ -2,7 +2,7 @@ import io.Source
 // Create the translation dictionary
 
 if (args.length < 1) {
-  println("Please supply the dictionary and text to translate.")
+  System.err.println("Please supply the dictionary and text to translate.")
   System.exit(1)
 }
 

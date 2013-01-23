@@ -9,16 +9,16 @@ args match {
   case Array(first, op, second) => 
     if (!IntegerPattern.pattern.matcher(first).matches 
         || !IntegerPattern.pattern.matcher(second).matches) {
-      println("Please provide integers as arguments to the operator.")
+      System.err.println("Please provide integers as arguments to the operator.")
       System.exit(1)
     }
     if (!Operators.pattern.matcher(op).matches) {
-      println("Please provide a valid operator.")
+      System.err.println("Please provide a valid operator.")
       System.exit(1)
     }
 
   case _ => 
-    println("Incorrect number of arguments to calculator.scala. Please provide three arguments.")
+    System.err.println("Incorrect number of arguments to calculator.scala. Please provide three arguments.")
     System.exit(1)
 }
 
