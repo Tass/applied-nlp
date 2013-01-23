@@ -1,8 +1,6 @@
-val studentDirs = new java.io.File(".").listFiles.map(_.toString).filter(_.endsWith("hw1")).sorted
+val hw1dir = new java.io.File("../hw1")
 
-studentDirs.foreach { dir =>
-  println("*** " + dir + " ***")
-  val command = List("scala",dir+"/"+args(0)) ::: args.drop(1).toList
-  scala.sys.process.stringSeqToProcess(command).lines.foreach(println)
-  println()
-}
+println("*** " + hw1dir + " ***")
+val command = List("scala",hw1dir+"/"+args(0)) ::: args.drop(1).toList
+scala.sys.process.stringSeqToProcess(command).lines.foreach(println)
+println()
