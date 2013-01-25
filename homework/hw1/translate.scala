@@ -3,7 +3,7 @@ import io.Source
 
 if (args.length < 1) {
   System.err.println("Please supply the dictionary and text to translate.")
-  System.exit(1)
+  sys.exit(1)
 }
 
 val dictionary = Source.fromFile(args(0)).getLines.map(_.split("\t")).map((line) => (line(0), line(1))).toMap

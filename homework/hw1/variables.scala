@@ -6,7 +6,7 @@
 val IntegerPattern = """-?\d+""".r
 if (args.length != 2 || args.exists(arg => !IntegerPattern.pattern.matcher(arg).matches)) {
   System.err.println("Incorrect arguments to variables.scala. Please provide two integers.")
-  System.exit(1)
+  sys.exit(1)
 }
 
 ////////////////////////////////////////////////////////////////////////

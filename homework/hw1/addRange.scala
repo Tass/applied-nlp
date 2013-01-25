@@ -4,7 +4,7 @@
 val IntegerPattern = """-?\d+""".r
 if (args.length != 2 || args.exists(arg => !IntegerPattern.pattern.matcher(arg).matches)) {
   System.err.println("Incorrect arguments to variables.scala. Please provide two integers.")
-  System.exit(1)
+  sys.exit(1)
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -20,7 +20,7 @@ val numbers = args.map(_.toInt)
 
 if (numbers(0) > numbers(1)) {
   System.err.println("Please make sure that the first number is smaller than the second.")
-  System.exit(1) // 0 means success
+  sys.exit(1) // 0 means success
 }
 
 // Create a range using "to" and the numbers provided as arguments. 

@@ -3,7 +3,7 @@
 val IntegerPattern = """-?\d+""".r
 if (args.length != 1 || !IntegerPattern.pattern.matcher(args(0)).matches) {
   System.err.println("Incorrect arguments to variables.scala. Please provide one integer.")
-  System.exit(1)
+  sys.exit(1)
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -18,7 +18,7 @@ val limit = args(0).toInt
 
 if (limit <= 0) {
   System.err.println("Please supply a number greater than or equal to 0.")
-  System.exit(1) // 0 means success
+  sys.exit(1) // 0 means success
 }
 
 // Compute the factorial using recursion.

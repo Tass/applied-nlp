@@ -7,7 +7,7 @@ val defaultRoomNumbers = Map("Sam" -> "312", "Ted" -> "325", "Jane" -> "312")
 // arguments. Print a warning and exit if there aren't.
 if (args.length % 2 != 0) {
   System.err.println("Please supply an even number of arguments.")
-  System.exit(1)
+  sys.exit(1)
 }
 
 
@@ -23,7 +23,7 @@ val roomNumbers = defaultRoomNumbers ++ filterOnIndex(args.toList, (_ % 2 == 0))
 // alphabetically by name.
 println("\nPart (a)")
 
-roomNumbers.toList.sortBy(_._2).foreach({case (name, number) => println("%s: Room %s".format(name, number))})
+roomNumbers.toList.sortBy(_._1).foreach({case (name, number) => println("%s: Room %s".format(name, number))})
 
 // Create a new Map roomsToPeople that maps room numbers to lists of
 // the people who are in them.
