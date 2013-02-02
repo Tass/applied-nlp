@@ -1,30 +1,111 @@
 #### 1
 
-Your '-anlp' twitter account:
+Your '-anlp' twitter account: botty_anlp
 
-The unique 'id' of your tweet: 
+The unique 'id' of your tweet: 296736574970929153
 
 #### 2
 
-Provide the last five lines of extracted100.txt:
+Provide the last five lines of extracted100.txt: 
+@HCP520's INTERNS  38217 #POPCULTURE #NEWS | New York City, January 29, 2013 http:\/\/t.co\/WS3IWACZ | #FOLLOW &gt; @HCP520
+TONI  39 RT @GlobalGrind: JUST IN: Mother loses her 4th child to gun violence in Chicago\u2026 http:\/\/t.co\/yxEswIYA #NoMoreViolence
+Cecily 173 Liv also thought New York was in the middle of America and asked if we visited the Brooklyn Bridge on our geo trip to California
+H.U.  147 RT @F_casen: mas denso que austin relatando
+DIGI.tahl 709 #POPCULTURE #NEWS | New York City, January 29, 2013 http:\/\/t.co\/L8kG1Kdw | #FOLLOW &gt; @HCP520
 
 #### 3
 
 Provide the output for processing extracted100.txt:
 
+Tokens:
+RT
+New
+York
+in
+the
+to
+...
+and
+Chicago
+at
+Hashtags:
+#Chicago
+#NEWS
+#FOLLOW
+#POPCULTURE
+#Hadiy
+#chicago
+#happy
+#SanFran
+#models
+#Spring
+Mentions:
+@HCP520
+@UncleRUS
+@SaraBareille
+@bree_kell
+@Em_Dickinso
+@HeatherBarret11
+@kasialoren
+@maluka
+@AdamRubinESP
+@SeanParnellUS
+
 #### 4
 
 Provide the output for streaming from the Twitter API:
 
+Accumulating tweets: 6000
+Number of Tweets seen: 1000
+[Batch] #Jaide:5 #FF:3 #3:2 #民主:2 #2:2 #sougofollow:2 #FebruaryWishes:2 #アメブロ:2 #can:2 #freedom:2
+[Global] #Jaide:5 #FF:3 #3:2 #民主:2 #2:2 #sougofollow:2 #FebruaryWishes:2 #アメブロ:2 #can:2 #freedom:2
+Accumulating tweets: 1000
+Number of Tweets seen: 2000
+[Batch] #celine:11 #FF:9 #FF_Specialツ:3 #smusou7:2 #TeamFollowBack:2 #HappyBDayHarryFromTurkey:2 #JaidePlaylist:2 #TFBJP:2 #ThinkBigThinkMini:2 #IngaatGa:2
+[Global] #FF:12 #celine:11 #Jaide:5 #FF_Specialツ:3 #HappyBDayHarryFromTurkey:3 #JaidePlaylist:3 #smusou7:2 #rt:2 #wish:2 #TeamFollowBack:2
+Accumulating tweets: 4000
+Number of Tweets seen: 3000
+[Batch] #celine:19 #FF:8 #Jaide:4 #CelebrityNews:2 #Gossip:2 #HappyBDayHarryFromTurkey:2 #RT:2 #:2 #InstantFollowBack:2 #baby:1
+[Global] #celine:30 #FF:20 #Jaide:9 #HappyBDayHarryFromTurkey:5 #RT:4 #:4 #FF_Specialツ:3 #wish:3 #TeamFollowBack:3 #JaidePlaylist:3
+Accumulating tweets: 1300
+Number of Tweets seen: 4000
+[Batch] #celine:17 #HappyBumpDayHarry:6 #FF:4 #ff:3 #RT:3 #gameinsight:3 #BlackHistoryMonth:2 #TeamFollowBack:2 #19ReasonsToLoveHarryStyles:2 #SometimesYouHaveTo:2
+[Global] #celine:47 #FF:24 #Jaide:9 #RT:7 #HappyBumpDayHarry:6 #:6 #TeamFollowBack:5 #HappyBDayHarryFromTurkey:5 #gameinsight:5 #IngaatGa:4
+Accumulating tweets: 6000
+Number of Tweets seen: 5000
+[Batch] #celine:10 #FF:5 #HappyBDayHarryFromTurkey:3 #TFB:1 #ff__special__back:1 #farmville:1 #ff:1 #Ask":1 #الجامية:1 #antisocial:1
+[Global] #celine:57 #FF:29 #Jaide:9 #HappyBDayHarryFromTurkey:8 #RT:7 #:7 #HappyBumpDayHarry:6 #TeamFollowBack:6 #gameinsight:5 #ff:4
+Accumulating tweets: 4000
+Number of Tweets seen: 6000
+[Batch] #celine:9 #FF:4 #HappyBDayHarryFromTurkey:3 #ouch:2 #aiya:2 #RT:2 #7den77yeBarışMançoyuAnıyoruz:2 #Smurfette:1 #TFB:1 #leadership:1
+[Global] #celine:66 #FF:33 #HappyBDayHarryFromTurkey:11 #RT:9 #Jaide:9 #TeamFollowBack:7 #:7 #HappyBumpDayHarry:6 #ff:5 #gameinsight:5
 
 Provide any hashtags that you found that were also trending on Twitter:
 
+#HappyBDayHarryFromTurkey
+#Jaide
+#GalatasarayaGönülVerenlerTakipleşiyor
+#SometimesYouHaveTo
+#WhatToSayAfterSex
 
 #### Extra
 
 Discuss what you did, including any additional programs you wrote and how to run them (if that is straightforward enough), and a discussion of the output you obtained.
 
+tar xf twitter-bot.tgz
+cd twitter-bot
+sbt assembly
+# Somehow the typesafe akka repo is down. If that is still the case,
+# extract com.typesafe.akka.tgz in .ivy2/local
+# If assembly doesn't exist, execute the cat below.
+# If you don't like global plugins, replace the path with project/plugins.sbt
 
+cat <<CODE >> ~/.sbt/plugins/plugins.sbt
+resolvers += Resolver.url("artifactory", url("http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases"))(Resolver.ivyStylePatterns)
 
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.8.5")
+CODE
 
+curl -s --user $TWUSER:$TWPWD https://stream.twitter.com/1/statuses/sample.json | scala target/botty-assembly-0.0.1.jar
 
+# Enjoy
