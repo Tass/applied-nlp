@@ -1,0 +1,795 @@
+    325 Mrs. Eddy
+    211 Mrs. Clemens
+    132 Mr. Clemens
+     64 Mr. Rogers
+     62 Mr. Bolton
+     61 Mr. Bixby
+     47 Miss Hawkins
+     44 Mr. Braham
+     43 Mr. Buckstone
+     41 Mrs. Jane Clemens
+     37 Mr. Trollop
+     34 Mrs. Moffett
+     33 Rev. Mr
+     33 Mrs. Howells
+     32 Mrs. Hawkins
+     30 Mr. Hawkins
+     30 Mr. Brown
+     25 Mr. Howells
+     25 Mr. Brierly
+     25 Mr. Bigler
+     25 Miss Watson
+     21 Mr. Rhodes
+     21 Mr. Ballou
+     20 Mr. Winters
+     20 Mr. Noble
+     19 Mr. Dilworthy
+     19 Mr. Carnegie
+     18 Mr. Jones
+     18 Mr. Daly
+     17 Mrs. Crane
+     16 Mrs. Bolton
+     16 Mr. Twain
+     15 Mr. Choate
+     15 Miss Mary Jane
+     14 Mrs. McWilliams
+     14 Mr. Wilson
+     14 Mr. Darwin
+     14 Mr. Allen
+     13 Mr. Parker
+     12 Mrs. Thatcher
+     12 Mrs. Sellers
+     12 Mrs. Pratt
+     12 Mr. Young
+     12 Mr. Holmes
+     12 Mr. Floyd
+     11 Mrs. Harper
+     11 Mr. Thompson
+     11 Mr. Longfellow
+     11 Mr. Chairman
+     10 Mrs. Oreille
+     10 Mrs. Enderby
+     10 Mr. Tracy
+     10 Mr. Moffett
+     10 Mr. Lynch
+     10 Mr. Langdon
+     10 Mr. Harris
+     10 Mr. Emerson
+     10 Mr. Barnum
+      9 Mrs. Taylor
+      9 Mrs. Boinville
+      9 Mr. Richards
+      9 Mr. President
+      9 Mr. Garrett
+      9 Mr. Dickens
+      9 Mr. Cable
+      9 Mr. Burgess
+      8 Rev. Joseph
+      8 Mr. Whymper
+      8 Mr. Smythe
+      8 Mr. Sellers
+      8 Mr. Greeley
+      8 Mr. Blank
+      8 Mr. Birrell
+      8 Miss Sophia
+      7 Rev. Dr
+      7 Mr. Valeer
+      7 Mr. Twichell
+      7 Mr. Thornburg
+      7 Mr. Sterling
+      7 Mr. Peabody
+      7 Mr. Mabie
+      7 Mr. Hall
+      7 Mr. Goodman
+      6 Mrs. Marsh
+      6 Mrs. Jones
+      6 Mrs. Hogan
+      6 Mr. Walters
+      6 Mr. Thomas
+      6 Mr. Street
+      6 Mr. Stephenson
+      6 Mr. Rockefeller
+      6 Mr. Lothrop
+      6 Mr. Jerome
+      6 Mr. Harkness
+      6 Mr. Driscoll
+      6 Mr. Chang Riley
+      6 Mr. Burlingame
+      6 Mr. Bloke
+      6 Mr. Barclay
+      6 Miss Sullivan
+      6 Miss Hooker
+      5 Rev. Joseph Twichell
+      5 Mrs. Trollope
+      5 Mrs. Schoonmaker
+      5 Mrs. Richards
+      5 Mrs. Glossop
+      5 Mrs. Dodge
+      5 Mr. Wakeman
+      5 Mr. Vanderbilt
+      5 Mr. Smith
+      5 Mr. Mark Twain
+      5 Mr. Lincoln
+      5 Mr. Harry Brierly
+      5 Mr. Eng Nye
+      5 Mr. Dobbins
+      5 Mr. Cannon
+      5 Mr. Billson
+      5 Mr. Bascom
+      5 Mr. Arnold
+      5 Mr. Arkansas
+      5 Miss Wagner
+      5 Miss Spaulding
+      5 Miss Laura
+      5 Miss Hitchener
+      5 Miss Harrison
+      4 Rev. Leonidas
+      4 Rev. Jos
+      4 Mrs. Rogers
+      4 Mrs. Praed
+      4 Mrs. Phelps
+      4 Mrs. Murphy
+      4 Mrs. Godwin
+      4 Mrs. Gashly
+      4 Mrs. Fuller
+      4 Mrs. Brown
+      4 Mr. Wood
+      4 Mr. Whittier
+      4 Mr. Speaker
+      4 Mr. Sidney Algernon Burley
+      4 Mr. Riley
+      4 Mr. Putzel
+      4 Mr. Parkman
+      4 Mr. Newton
+      4 Mr. McKelway
+      4 Mr. Lykins
+      4 Mr. Hadow
+      4 Mr. Grimes
+      4 Mr. Gray
+      4 Mr. Depew
+      4 Mr. Collins
+      4 Mr. Church
+      4 Mr. Burley
+      4 Mr. Blucher
+      4 Miss Mary
+      4 Miss Laura Hawkins
+      4 Miss Clara Spaulding
+      4 Miss Cathy
+      3 Mrs. Youngs
+      3 Mrs. Young
+      3 Mrs. Valeer
+      3 Mrs. Turner
+      3 Mrs. Orion Clemens
+      3 Mrs. Mary Baker
+      3 Mrs. Macy
+      3 Mrs. Higgins
+      3 Mrs. Hammond
+      3 Mrs. Gastrel
+      3 Mrs. Gabrilowitsch
+      3 Mrs. Fields
+      3 Mrs. Fairbanks
+      3 Mrs. Blank
+      3 Mrs. Aldrich
+      3 Mr. Washington Hawkins
+      3 Mr. Warner
+      3 Mr. Tomkins
+      3 Mr. Stewart
+      3 Mr. Stanley
+      3 Mr. Small
+      3 Mr. Russell
+      3 Mr. Ruskin
+      3 Mr. Reid
+      3 Mr. Paine
+      3 Mr. Murray
+      3 Mr. McSpadden
+      3 Mr. McFlinn
+      3 Mr. Manchester
+      3 Mr. Little
+      3 Mr. Justice Robinson
+      3 Mr. Johnson
+      3 Mr. Houghton
+      3 Mr. Holwell
+      3 Mr. Henry Brierly
+      3 Mr. Grant White
+      3 Mr. Girdlestone
+      3 Mr. Ferguson
+      3 Mr. Edison
+      3 Mr. Duneka
+      3 Mr. Dimsdale
+      3 Mr. Dana
+      3 Mr. Chauncy
+      3 Mr. Cecil Rhodes
+      3 Mr. Bryant
+      3 Mr. Bonwick
+      3 Mr. Bliss
+      3 Mr. Beach
+      3 Mr. Barrow
+      3 Mr. Angelo
+      3 Mr. Alonzo Fitz Clarence
+      3 Miss Rosannah Ethelton
+      3 Miss Marget
+      3 Miss Hattie
+      3 Miss Gashly
+      3 Miss Ethelton
+      2 Rev. Twichell
+      2 Rev. Nathaniel Davis
+      2 Rev. Nathan Hays
+      2 Rev. Mary Baker
+      2 Rev. Bishop
+      2 Prof. Thos
+      2 Prof. Lounsbury
+      2 Mrs. Winton
+      2 Mrs. Walker
+      2 Mrs. Tower
+      2 Mrs. Thomas
+      2 Mrs. Theodore Crane
+      2 Mrs. Sterling
+      2 Mrs. Ross
+      2 Mrs. Rice
+      2 Mrs. Patsy Cooper
+      2 Mrs. Oliver Higgins
+      2 Mrs. Moore
+      2 Mrs. Montague
+      2 Mrs. Langdon
+      2 Mrs. John Smith
+      2 Mrs. John Hays Hammond
+      2 Mrs. John
+      2 Mrs. Hutton
+      2 Mrs. Hooker
+      2 Mrs. Gray
+      2 Mrs. Grant
+      2 Mrs. Gordon
+      2 Mrs. Goodman
+      2 Mrs. Dr
+      2 Mrs. Doubleday
+      2 Mrs. Cutler
+      2 Mrs. Cooper
+      2 Mrs. Blumenthal
+      2 Mr. Williams
+      2 Mr. Wilks
+      2 Mr. Weed
+      2 Mr. Sutro
+      2 Mr. Sturgis
+      2 Mr. Sidney Lee
+      2 Mr. Sheriff
+      2 Mr. Robinson
+      2 Mr. Pugh
+      2 Mr. Philip
+      2 Mr. Perkins
+      2 Mr. Page
+      2 Mr. Osgood
+      2 Mr. Oreille
+      2 Mr. Oliver Wendell Holmes
+      2 Mr. Norton
+      2 Mr. Morgan
+      2 Mr. Montague
+      2 Mr. Messick
+      2 Mr. McWilliams
+      2 Mr. McCrackan
+      2 Mr. Martin
+      2 Mr. Marsh
+      2 Mr. Lowell
+      2 Mr. Lawrence
+      2 Mr. Kleinberg
+      2 Mr. Kean
+      2 Mr. John Brown
+      2 Mr. John
+      2 Mr. Jeff Thompson
+      2 Mr. Hutton
+      2 Mr. Hunter
+      2 Mr. Hinchliff
+      2 Mr. Higgins
+      2 Mr. Halsey
+      2 Mr. Griller
+      2 Mr. Gridley
+      2 Mr. Gregorig
+      2 Mr. Gane
+      2 Mr. Frohman
+      2 Mr. Frederick
+      2 Mr. Frank Doubleday
+      2 Mr. Foster
+      2 Mr. Fitz Clarence
+      2 Mr. Fiske
+      2 Mr. Ellis
+      2 Mr. Edward Atkinson
+      2 Mr. Dusenheimer
+      2 Mr. Davis
+      2 Mr. Daniel Frohman
+      2 Mr. Curry
+      2 Mr. Cummings
+      2 Mr. Crane
+      2 Mr. Cooper
+      2 Mr. Cleveland
+      2 Mr. Clayton
+      2 Mr. Churton Collins
+      2 Mr. Chew
+      2 Mr. Castle
+      2 Mr. Burton
+      2 Mr. Brant
+      2 Mr. Benton
+      2 Mr. Benjamin Disraeli
+      2 Mr. Beecher
+      2 Mr. Beard
+      2 Mr. Bean
+      2 Mr. Batterson
+      2 Mr. Barnard
+      2 Mr. Bailey
+      2 Mr. Austin
+      2 Mr. Atwater
+      2 Mr. Arnot
+      2 Miss Sally
+      2 Miss Porter
+      2 Miss Jones
+      2 Miss Jenkins
+      2 Miss Jacops
+      2 Miss Gilder
+      2 Miss Emmeline Gashly
+      2 Miss Dickinson
+      2 Miss Charlotte
+      2 Miss Catherine
+      2 Miss Castle
+      2 Miss Belle
+      2 Miss Alice
+      1 Rev. Wm
+      1 Rev. William
+      1 Rev. Thos
+      1 Rev. Thomas Beecher
+      1 Rev. Thomas
+      1 Rev. Stebbings
+      1 Rev. Scudder
+      1 Rev. Orson Balsam
+      1 Rev. Melton Hargrave
+      1 Rev. MARY BAKER
+      1 Rev. Joseph Hopkins
+      1 Rev. John Halifax
+      1 Rev. James Sawyer
+      1 Rev. Hobson
+      1 Rev. Hiram Fletcher
+      1 Rev. Henry Ward Beecher
+      1 Rev. Henry
+      1 Rev. George Tomkins
+      1 Prof. William Lyon Phelps
+      1 Prof. Willard Fiske
+      1 Prof. Fiske
+      1 Prof. Brander Matthews
+      1 Mrs: Clemens
+      1 Mrs. York Driscoll
+      1 Mrs. Wilcox
+      1 Mrs. Whitmore
+      1 Mrs. Ward
+      1 Mrs. Waite
+      1 Mrs. Van Rensselaer
+      1 Mrs. Upton
+      1 Mrs. Twichell
+      1 Mrs. Tilton
+      1 Mrs. Thayer
+      1 Mrs. Susan
+      1 Mrs. Strong
+      1 Mrs. Stowe
+      1 Mrs. Stoker
+      1 Mrs. Stillman
+      1 Mrs. Spinal Meningitis Snodgrass
+      1 Mrs. Smalley
+      1 Mrs. Shoonmaker
+      1 Mrs. Senator Poplin
+      1 Mrs. Rose Terry Cooke
+      1 Mrs. Rev
+      1 Mrs. Representative Schoonmaker
+      1 Mrs. Rachel Pratt
+      1 Mrs. Piper
+      1 Mrs. Phebe Brown
+      1 Mrs. Peter Gashly
+      1 Mrs. Perkins
+      1 Mrs. Percy Driscoll
+      1 Mrs. Patrique Oreille
+      1 Mrs. Pamela Moffett
+      1 Mrs. Onion Clemens
+      1 Mrs. Newton
+      1 Mrs. McElroy
+      1 Mrs. McCarter
+      1 Mrs. Mary Mapes
+      1 Mrs. Mary
+      1 Mrs. Marlitt
+      1 Mrs. Marco
+      1 Mrs. Major
+      1 Mrs. Mackenzie
+      1 Mrs. Mackay
+      1 Mrs. MacAlister
+      1 Mrs. Mabel Larkin Patterson
+      1 Mrs. Lewis
+      1 Mrs. Lester
+      1 Mrs. Leiter
+      1 Mrs. Laflan
+      1 Mrs. Krout
+      1 Mrs. Julia Moore
+      1 Mrs. Julia
+      1 Mrs. Judith Loftus
+      1 Mrs. Johnson
+      1 Mrs. John Smiths
+      1 Mrs. John Jones
+      1 Mrs. Jervis Langdon
+      1 Mrs. James
+      1 Mrs. Jackson Beazeley
+      1 Mrs. Jackson
+      1 Mrs. Hunter
+      1 Mrs. Hotchkiss
+      1 Mrs. Hookway
+      1 Mrs. Hewitt
+      1 Mrs. Hartwig
+      1 Mrs. Harriet Beecher Stowe
+      1 Mrs. Halleck
+      1 Mrs. Hale
+      1 Mrs. Grover Cleveland
+      1 Mrs. Glyn
+      1 Mrs. Gloverson
+      1 Mrs. George Warner
+      1 Mrs. Gen
+      1 Mrs. Foster
+      1 Mrs. Fitz Clarence
+      1 Mrs. Fiske
+      1 Mrs. Field
+      1 Mrs. Eversly Bennett
+      1 Mrs. Ellis
+      1 Mrs. Elizabeth
+      1 Mrs. Elinor Glyn
+      1 Mrs. Eddys
+      1 Mrs. Drake
+      1 Mrs. Douglas
+      1 Mrs. Dilworthy
+      1 Mrs. De Winton
+      1 Mrs. Damrell
+      1 Mrs. Creel
+      1 Mrs. Cox
+      1 Mrs. Col
+      1 Mrs. Clayton
+      1 Mrs. Cheney
+      1 Mrs. Charles McQuiston
+      1 Mrs. Charles Dudley Warner
+      1 Mrs. Captain Marsh
+      1 Mrs. Canty
+      1 Mrs. Campbell Praed
+      1 Mrs. Burnett
+      1 Mrs. Buckner
+      1 Mrs. Bruere
+      1 Mrs. Browning
+      1 Mrs. Brooks
+      1 Mrs. Bret
+      1 Mrs. Bradshaw
+      1 Mrs. Boswell
+      1 Mrs. Betts
+      1 Mrs. Benson
+      1 Mrs. Bennett
+      1 Mrs. Beecher
+      1 Mrs. Beazely
+      1 Mrs. Beazeley
+      1 Mrs. Barclays
+      1 Mrs. Bagley
+      1 Mrs. BLUMENTHAL
+      1 Mrs. Ambulinia Valeer Elfonzo
+      1 Mrs. Alonzo Fitz Clarence
+      1 Mrs. Allen
+      1 Mrs Sellers
+      1 Mrs Eddy
+      1 Mr. Wolf
+      1 Mr. Wohlmeyer
+      1 Mr. Winton
+      1 Mr. William Schuyler
+      1 Mr. William Little
+      1 Mr. Wiegand
+      1 Mr. Wheeler
+      1 Mr. Wells
+      1 Mr. Webster
+      1 Mr. Washington
+      1 Mr. Ward
+      1 Mr. Vincent Arthur Smith
+      1 Mr. Vielohlawek
+      1 Mr. Van Dorn
+      1 Mr. Valentine
+      1 Mr. Tyndall
+      1 Mr. Turner
+      1 Mr. Toole
+      1 Mr. Tom Ellis
+      1 Mr. Toastmaster
+      1 Mr. Thomas Sawyer
+      1 Mr. Thomas Driscoll
+      1 Mr. Talmage
+      1 Mr. Sykes
+      1 Mr. Street Astonished Them
+      1 Mr. Storhbach
+      1 Mr. Statham
+      1 Mr. Southard
+      1 Mr. Snub Rafferty
+      1 Mr. Smythe February
+      1 Mr. Smitthe
+      1 Mr. Slum
+      1 Mr. Slote
+      1 Mr. Sing
+      1 Mr. Simonton
+      1 Mr. Simons
+      1 Mr. Simon Young
+      1 Mr. Simmons
+      1 Mr. Siddy
+      1 Mr. Shepherd
+      1 Mr. Shepard
+      1 Mr. Shelley
+      1 Mr. Seymour
+      1 Mr. See Yup
+      1 Mr. Secretary Hitchcock
+      1 Mr. Secretary Hay
+      1 Mr. Secretary Burnett
+      1 Mr. Secretary
+      1 Mr. Scott
+      1 Mr. Schuyler
+      1 Mr. Schoonmaker
+      1 Mr. Schoolcraft
+      1 Mr. Scheiding
+      1 Mr. Satya Chandra Mukerji
+      1 Mr. Samuel
+      1 Mr. Sam Jones
+      1 Mr. STEPHENSON
+      1 Mr. Roychand
+      1 Mr. Row
+      1 Mr. Rossm
+      1 Mr. Roosevelt
+      1 Mr. Roger
+      1 Mr. Rodgers
+      1 Mr. Richardson
+      1 Mr. Randall
+      1 Mr. Quiggle
+      1 Mr. Putnam
+      1 Mr. Pudd
+      1 Mr. Prochazka
+      1 Mr. Prime
+      1 Mr. President The
+      1 Mr. Premchand Roychand
+      1 Mr. Powhatan
+      1 Mr. Potzl
+      1 Mr. Porter
+      1 Mr. Poe
+      1 Mr. Pinkerton
+      1 Mr. Pinero
+      1 Mr. Pierce
+      1 Mr. Phiroze Hoshang Dastur
+      1 Mr. Phillipps
+      1 Mr. Philip Chauncy
+      1 Mr. Phelps
+      1 Mr. Peters
+      1 Mr. Peter Wilks
+      1 Mr. Percy
+      1 Mr. Per
+      1 Mr. Patrick McCarren
+      1 Mr. Parsons
+      1 Mr. Papilius Lena
+      1 Mr. PUTZEL
+      1 Mr. Odell
+      1 Mr. Nusserwanjee Byranijee
+      1 Mr. Noah Brooks
+      1 Mr. Nixon
+      1 Mr. Nickerson
+      1 Mr. Ned Thurston
+      1 Mr. Myers
+      1 Mr. Moses
+      1 Mr. Moseley
+      1 Mr. Morse
+      1 Mr. Moncrieff
+      1 Mr. Mitchell
+      1 Mr. Milligan
+      1 Mr. Meyer
+      1 Mr. Merle Johnson
+      1 Mr. McKinley
+      1 Mr. McClintock
+      1 Mr. Mayreder
+      1 Mr. Mayhew
+      1 Mr. Matthew Arnold
+      1 Mr. Luigi
+      1 Mr. Lucius Harris
+      1 Mr. Low
+      1 Mr. Lounsbury
+      1 Mr. Lionel Phillips
+      1 Mr. Lindh
+      1 Mr. Lem
+      1 Mr. Lecky
+      1 Mr. Laura
+      1 Mr. Lascelles
+      1 Mr. Lanigan
+      1 Mr. Lang
+      1 Mr. Kletzenbauer
+      1 Mr. Kinsey
+      1 Mr. Kildren
+      1 Mr. Karl Gerhardt
+      1 Mr. Justice Wadsworth
+      1 Mr. Justice Shallow
+      1 Mr. Justice Halleck
+      1 Mr. Justice Crawford
+      1 Mr. Jules
+      1 Mr. Joseph Sciatti
+      1 Mr. Jonas Turner
+      1 Mr. John William Bloke
+      1 Mr. John Leavenworth
+      1 Mr. John Elderkin
+      1 Mr. John Buckstone
+      1 Mr. John Brisben Walker
+      1 Mr. John Backus
+      1 Mr. Jno
+      1 Mr. Jeff Davis
+      1 Mr. Jarves
+      1 Mr. James Whitcomb Chang Riley
+      1 Mr. James Guthrie
+      1 Mr. James
+      1 Mr. Jackson
+      1 Mr. Irving
+      1 Mr. Inderwick
+      1 Mr. Howard Tracy
+      1 Mr. Howard
+      1 Mr. Hotchkiss
+      1 Mr. Hong Wo
+      1 Mr. Holliday
+      1 Mr. Higbie
+      1 Mr. Herrman
+      1 Mr. Henry Alden
+      1 Mr. Henry
+      1 Mr. Henkin
+      1 Mr. Harvey Davis
+      1 Mr. Harte
+      1 Mr. Harrison
+      1 Mr. Harbison
+      1 Mr. Hamilton
+      1 Mr. Halliwell
+      1 Mr. Hale
+      1 Mr. Hadley
+      1 Mr. Hackett
+      1 Mr. Grout
+      1 Mr. Grossmith
+      1 Mr. Gringo
+      1 Mr. Greely
+      1 Mr. Graham
+      1 Mr. Gowan
+      1 Mr. Gorky
+      1 Mr. Goodson
+      1 Mr. Glockner
+      1 Mr. Gladstone
+      1 Mr. Gilder
+      1 Mr. George Iles
+      1 Mr. George Fisher
+      1 Mr. George Corkindale
+      1 Mr. George Bemis
+      1 Mr. George
+      1 Mr. Gatts
+      1 Mr. Gaston
+      1 Mr. Garrick Richmond
+      1 Mr. Garrick Juliet
+      1 Mr. Garnham
+      1 Mr. Gardner
+      1 Mr. Gardiner
+      1 Mr. Gape
+      1 Mr. Gandhi
+      1 Mr. Galileo
+      1 Mr. Gabrilowitsch
+      1 Mr. Fred Douglass
+      1 Mr. Forrest Morgan
+      1 Mr. Ford
+      1 Mr. Flower
+      1 Mr. Fiends
+      1 Mr. Fall
+      1 Mr. Fairoaks
+      1 Mr. Eyre
+      1 Mr. Elexander Robinson
+      1 Mr. Edwards
+      1 Mr. Edward Channing
+      1 Mr. Edmunds
+      1 Mr. Dyer
+      1 Mr. Duff Brown
+      1 Mr. Douglass
+      1 Mr. Dooley
+      1 Mr. Dolby
+      1 Mr. Dickason
+      1 Mr. Delirium Tremens Twain
+      1 Mr. Decius Brutus
+      1 Mr. David Wilson
+      1 Mr. Daniel Slote
+      1 Mr. Dam
+      1 Mr. Croker
+      1 Mr. Cradlebaugh
+      1 Mr. Corkindale
+      1 Mr. Corbett
+      1 Mr. Cony
+      1 Mr. Conness
+      1 Mr. Collier
+      1 Mr. Coggia
+      1 Mr. Clawson
+      1 Mr. Claggett
+      1 Mr. Churchill
+      1 Mr. Christmas
+      1 Mr. Chatto
+      1 Mr. Charles Orr
+      1 Mr. Charles
+      1 Mr. Chamberlain
+      1 Mr. Catty
+      1 Mr. Cash
+      1 Mr. Carlyle Smythe
+      1 Mr. Carlton
+      1 Mr. Caesar
+      1 Mr. CLEMENS AT THE SAVOY HOTEL
+      1 Mr. Burrough
+      1 Mr. Burnand
+      1 Mr. Bunker
+      1 Mr. Bryerman
+      1 Mr. Bryan
+      1 Mr. Brough Smyth
+      1 Mr. Brierson
+      1 Mr. Briefly
+      1 Mr. Bonamici
+      1 Mr. Blucher Loses Confidence
+      1 Mr. Blake
+      1 Mr. Billings
+      1 Mr. Beverly
+      1 Mr. Bergh
+      1 Mr. Ben Rucker
+      1 Mr. Ben Jonson
+      1 Mr. Ben Holliday
+      1 Mr. Bellows
+      1 Mr. Beit
+      1 Mr. Baxter
+      1 Mr. Ballou Objects
+      1 Mr. Baker
+      1 Mr. Bagley
+      1 Mr. Baedeker
+      1 Mr. Backus
+      1 Mr. Augustin Daly
+      1 Mr. Aston
+      1 Mr. Archibald Nichols
+      1 Mr. Ann
+      1 Mr. Alexander
+      1 Mr. Albert Bigelow Paine
+      1 Mr. Ah Sing
+      1 Mr. Adams
+      1 Mr, Dilworthy
+      1 Miss White
+      1 Miss What
+      1 Miss Wallace
+      1 Miss Thompson
+      1 Miss Susan
+      1 Miss Sulamith
+      1 Miss Stratton
+      1 Miss Smarty
+      1 Miss Serena Amelia Tryphenia McSpadden
+      1 Miss Polly
+      1 Miss Picard
+      1 Miss Peters
+      1 Miss Nye
+      1 Miss Neron
+      1 Miss Medlar
+      1 Miss Mary Evans Mrs
+      1 Miss Louisa
+      1 Miss Leavitt
+      1 Miss Laura Van Brunt Hawkins
+      1 Miss Langdon
+      1 Miss Joy Agnew
+      1 Miss Jefferson
+      1 Miss Higgins
+      1 Miss Herts
+      1 Miss Helene Picard
+      1 Miss Hawking
+      1 Miss Harryet McDougal
+      1 Miss Harper
+      1 Miss Gwendolen
+      1 Miss Griffith
+      1 Miss Gordon Cumming
+      1 Miss Eva Farrell
+      1 Miss Emmeline
+      1 Miss Emma Nye
+      1 Miss Emily Hawkins
+      1 Miss Ellen Emerson
+      1 Miss Cooper
+      1 Miss Caroline
+      1 Miss Bridget
+      1 Miss Blank
+      1 Miss Blanche
+      1 Miss Belle Thompson
+      1 Miss Beecher
+      1 Miss Becca Blankenship
+      1 Miss Augusta
+      1 Miss Angela Bohun
+      1 Miss Alice Hooker
+      1 Miss Agnew
+      1 Miss Adaline Robinson

@@ -9,8 +9,10 @@ I did not dare to go back towards the pit, but I felt a passionate longing to pe
 // Part (a)
 println("\nPart (a)")
 
+println("Number of one syllable words on full String: %d".format("""[^aeiou]*[aeiou]+[^aeiou]*""".r.findAllIn(wotwRaw).length))
 
 // Part (b)
 println("\nPart (b)")
 
+println("Number of one syllable words on split String: %d".format(wotwRaw.split(" ").toList.flatMap("""[^aeiou]*[aeiou]+[^aeiou]*""".r.findAllIn(_)).length))
 

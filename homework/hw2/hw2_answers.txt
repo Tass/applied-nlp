@@ -1,6 +1,5 @@
 Homework 3 Answers
-Name:
-
+Name: Simon Hafner
 
 
 Problem 4
@@ -8,15 +7,35 @@ Problem 4
 
 Part (d)
 
+    325 Mrs. Eddy
+    211 Mrs. Clemens
+    132 Mr. Clemens
+     64 Mr. Rogers
+     62 Mr. Bolton
+     61 Mr. Bixby
+     47 Miss Hawkins
+     44 Mr. Braham
+     43 Mr. Buckstone
+     41 Mrs. Jane Clemens
 
+     16 Mr. Twain
 
 Part (e)
 
+Recognized:
 
+     33 Rev. Mr
+
+Text: Rev. Mr. Twichell
+
+Problem: It does not correctly recognize multiple titles. It works if
+the title does not have a dot at the end, because the Regex is looking
+for Words that start with a upper case letter, and stops looking if it
+finds a point.
 
 Problem 5
 
-
 Part (b)
 
-
+One of the two is the text before the first FEDERALIST statement.
+Federalist No. 70 occurs twice, which explains the second one.
