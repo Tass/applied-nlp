@@ -18,18 +18,24 @@ case class ClusterPoint(id: String, label: String, point: Point)
  *     of (known) cluster labels, and the third of which is the sequence of
  *     Points to be clustered.
  */
-trait PointCreator extends (String => Iterator[ClusterPoint])
+trait PointCreator extends (String => Iterator[ClusterPoint]) {
+  def apply(filename: String): Iterator[ClusterPoint] = io.Source.fromFile(filename).getLines.map(line => processLine(line.split(" "))).flatten
+  def processLine(line: Array[String]): Iterator[ClusterPoint] = Iterator()
+}
+
+object Point {
+  def apply(x: String, y: String) = nak.cluster.Point(Vector(x,y).map(_.toDouble))
+}
 
 /**
  * Read data in the standard format for use with k-means.
  */
 object DirectCreator extends PointCreator {
 
-  def apply(filename: String) = io.Source.fromFile(filename).getLines.map(line =>
-    line.split(" ") match {
-      case Array(id, label, x, y, _*) => Some(ClusterPoint(id, label, Point(Vector(x,y).map(_.toDouble))))
-      case _ => None
-    }).flatten
+  override def processLine(line: Array[String]) = line match {
+      case Array(id, label, x, y, _*) => Iterator(ClusterPoint(id, label, Point(x,y)))
+      case _ => Iterator()
+    }
 
 }
 
@@ -40,7 +46,17 @@ object DirectCreator extends PointCreator {
  */
 object SchoolsCreator extends PointCreator {
 
-  def apply(filename: String) = List[ClusterPoint]().toIterator
+  override def processLine(line: Array[String]) = line match {
+    case Array(name, read_4, math_4, read_6, math_6, _*) =>
+      Iterator((read_4, math_4, "4"), (read_6, math_6, "6"))
+      .map({case (x, y, label) =>
+            ClusterPoint(
+              (name + "_" + label).replace(" ", "_"),
+              label,
+              Point(x, y)
+            )})
+    case _ => Iterator()
+  }
 
 }
 
@@ -50,7 +66,6 @@ object SchoolsCreator extends PointCreator {
  */
 object CountriesCreator extends PointCreator {
 
-  def apply(filename: String) = List[ClusterPoint]().toIterator
 
 }
 
@@ -63,7 +78,6 @@ object CountriesCreator extends PointCreator {
  */
 class FederalistCreator(simple: Boolean = false) extends PointCreator {
 
-  def apply(filename: String) = List[ClusterPoint]().toIterator
 
   /**
    * Given the text of an article, compute the frequency of "the", "people"
