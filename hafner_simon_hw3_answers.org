@@ -49,3 +49,77 @@ Columns give predicted counts. Rows give gold counts.
 20	48	32
 [0]	[1]	[2]
 #+END_EXAMPLE
+
+* Schools
+#+BEGIN_EXAMPLE
+bin/anlp app Cluster -k 2 -r -d e -f schools data/cluster/schools/achieve.dat
+#+END_EXAMPLE
+#+BEGIN_EXAMPLE
+[3.5962962962962957,3.7629629629629626]
+[5.486956521739131,5.482608695652174]
+--------------------------------------------------------------------------------
+Confusion matrix.
+Columns give predicted counts. Rows give gold counts.
+--------------------------------------------------------------------------------
+23	2	|	25	[4]
+4	21	|	25	[6]
+-----------------
+27	23
+[0]	[1]
+
+[Label: 4] <=> [Cluster: 1]
+Ids: EDGEWOOD_4	HOOKER_4
+
+[Label: 4] <=> [Cluster: 0]
+Ids: BALDWIN_4	BARNARD_4	BEECHER_4	BRENNAN_4	CLINTON_4	CONTE_4	DAVIS_4	DAY_4	DWIGHT_4	EDWARDS_4	HALE_4	IVY_4	KIMBERLY_4	LINCOL_ASSETT_4	LOVELL_4	PRINCE_4	ROSS_4	SCRANTON_4	SHERMAN_4	TRUMAN_4	WES_ILLS_4	WINCHESTER_4	WOODWARD_4
+
+[Label: 6] <=> [Cluster: 0]
+Ids: BRENNAN_6	CONTE_6	DAY_6	WINCHESTER_6
+
+[Label: 6] <=> [Cluster: 1]
+Ids: BALDWIN_6	BARNARD_6	BEECHER_6	CLINTON_6	DAVIS_6	DWIGHT_6	EDGEWOOD_6	EDWARDS_6	HALE_6	HOOKER_6	IVY_6	KIMBERLY_6	LINCOL_ASSETT_6	LOVELL_6	PRINCE_6	ROSS_6	SCRANTON_6	SHERMAN_6	TRUMAN_6	WES_ILLS_6	WOODWARD_6
+#+END_EXAMPLE
+
+  Below average for all of them. But given the wrong association of
+  Edgewood and Hooker indicates they did good on 4th grade. You can't
+  say so of Brennan, Conte, Day and Winchester on 6th grade.
+
+** On 4
+   Looks like we have four clusters here, which line up on the
+   diagonal more or less. The second and last centroid are where the
+   averages reside, or some good 4th graders in the centroid 3.
+   Centroid 1 is for better 6th graders (and some kickass 4th).
+   Cluster 2 is for the ninjas (or pirates, your choice) of 6th grade.
+#+BEGIN_EXAMPLE
+[5.45,5.47]
+[3.2777777777777777,3.4388888888888887]
+[7.1,6.3]
+[4.370588235294117,4.68235294117647]
+--------------------------------------------------------------------------------
+Confusion matrix.
+Columns give predicted counts. Rows give gold counts.
+--------------------------------------------------------------------------------
+2	18	0	5	|	25	[4]
+8	0	5	12	|	25	[6]
+---------------------------------
+10	18	5	17
+[0]	[1]	[2]	[3]
+
+[Label: 4] <=> [Cluster: 1]
+Ids: BALDWIN_4	BARNARD_4	BRENNAN_4	CLINTON_4	CONTE_4	DAY_4	DWIGHT_4	EDWARDS_4	IVY_4	KIMBERLY_4	LINCOL_ASSETT_4	PRINCE_4	SCRANTON_4	SHERMAN_4	TRUMAN_4	WES_ILLS_4	WINCHESTER_4	WOODWARD_4
+
+[Label: 4] <=> [Cluster: 0]
+Ids: EDGEWOOD_4	HOOKER_4
+
+[Label: 6] <=> [Cluster: 0]
+Ids: BARNARD_6	CLINTON_6	EDWARDS_6	HALE_6	LOVELL_6	ROSS_6	SHERMAN_6	WES_ILLS_6
+
+[Label: 6] <=> [Cluster: 2]
+Ids: BEECHER_6	DAVIS_6	EDGEWOOD_6	HOOKER_6	WOODWARD_6
+
+[Label: 6] <=> [Cluster: 3]
+Ids: BALDWIN_6	BRENNAN_6	CONTE_6	DAY_6	DWIGHT_6	IVY_6	KIMBERLY_6	LINCOL_ASSETT_6	PRINCE_6	SCRANTON_6	TRUMAN_6	WINCHESTER_6
+
+[Label: 4] <=> [Cluster: 3]
+Ids: BEECHER_4	DAVIS_4	HALE_4	LOVELL_4	ROSS_4
+#+END_EXAMPLE
