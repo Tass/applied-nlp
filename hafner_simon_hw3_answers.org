@@ -123,3 +123,19 @@ Ids: BALDWIN_6	BRENNAN_6	CONTE_6	DAY_6	DWIGHT_6	IVY_6	KIMBERLY_6	LINCOL_ASSETT_6
 [Label: 4] <=> [Cluster: 3]
 Ids: BEECHER_4	DAVIS_4	HALE_4	LOVELL_4	ROSS_4
 #+END_EXAMPLE
+
+* Countries
+  Except with cosine similarity, which I have found rather unreliably,
+  see results above, there is no cluster where death > birth. And one
+  data point is the USSR. O.o
+
+  According to my history/economics knowledge, birth and death rate
+  can be used to describe the development status of a country - if
+  both are low, the industrial revolution happened. A high birth and
+  low death rate indicate the progress towards it and both high
+  indicate a non-developed country. With a cluster amount of 6, the
+  only countries which show up in a cluster with death rate
+  significantly over 20 are Ghana and the Ivory Coast. The ones next
+  down in the death numbers are mostly African too. The cluster with
+  the lowest birth-rate consists of Europe, Australia, India and
+  whatelse you would call "developed".
