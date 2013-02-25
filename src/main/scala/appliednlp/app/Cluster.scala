@@ -28,6 +28,7 @@ object Cluster {
     val datapoints = (opts.features() match {
       case "standard" => DirectCreator(opts.filename())
       case "schools" => SchoolsCreator(opts.filename())
+      case "countries" => CountriesCreator(opts.filename())
       case _ => throw new NotImplementedError()
     }).toList // Otherwise the iterator is empty
 
@@ -41,6 +42,7 @@ object Cluster {
     val memberships = kmeans.computeClusterMemberships(found._2)
     val labels = datapoints.map(_.label).toIndexedSeq
     println(ClusterConfusionMatrix(labels, opts.k(), memberships._2))
+    if(opts.report()) { ClusterReport(datapoints.map(_.id), labels, memberships._2) }
 
   }
 
