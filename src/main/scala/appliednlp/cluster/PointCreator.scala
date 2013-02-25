@@ -7,6 +7,8 @@ import chalk.util.SimpleTokenizer
 import org.apache.log4j.Logger
 import org.apache.log4j.Level
 
+case class ClusterPoint(id: String, label: String, point: Point)
+
 /**
  *  Read data and produce data points and their features.
  *
@@ -16,14 +18,18 @@ import org.apache.log4j.Level
  *     of (known) cluster labels, and the third of which is the sequence of
  *     Points to be clustered.
  */
-trait PointCreator extends (String => Iterator[(String,String,Point)])
+trait PointCreator extends (String => Iterator[ClusterPoint])
 
 /**
  * Read data in the standard format for use with k-means.
  */
 object DirectCreator extends PointCreator {
 
- def apply(filename: String) = List[(String,String,Point)]().toIterator
+  def apply(filename: String) = io.Source.fromFile(filename).getLines.map(line =>
+    line.split(" ") match {
+      case Array(id, label, x, y, _*) => Some(ClusterPoint(id, label, Point(Vector(x,y).map(_.toDouble))))
+      case _ => None
+    }).flatten
 
 }
 
@@ -34,7 +40,7 @@ object DirectCreator extends PointCreator {
  */
 object SchoolsCreator extends PointCreator {
 
-  def apply(filename: String) = List[(String,String,Point)]().toIterator
+  def apply(filename: String) = List[ClusterPoint]().toIterator
 
 }
 
@@ -44,7 +50,7 @@ object SchoolsCreator extends PointCreator {
  */
 object CountriesCreator extends PointCreator {
 
-  def apply(filename: String) = List[(String,String,Point)]().toIterator
+  def apply(filename: String) = List[ClusterPoint]().toIterator
 
 }
 
@@ -57,7 +63,7 @@ object CountriesCreator extends PointCreator {
  */
 class FederalistCreator(simple: Boolean = false) extends PointCreator {
 
-  def apply(filename: String) = List[(String,String,Point)]().toIterator
+  def apply(filename: String) = List[ClusterPoint]().toIterator
 
   /**
    * Given the text of an article, compute the frequency of "the", "people"

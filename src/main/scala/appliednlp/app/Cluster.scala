@@ -25,9 +25,17 @@ object Cluster {
     // while you run the algorithm. 
     val logLevel = if (opts.verbose()) Level.DEBUG else Level.INFO
     Logger.getRootLogger.setLevel(logLevel)
-    
-    // Your code starts here. You'll use and extend it during every problem.
+    val datapoints = DirectCreator(opts.filename()).toList // Otherwise the iterator is empty
+    val df = DistanceFunction(opts.distance())
+    val points = datapoints.map(_.point).toIndexedSeq
+    val centroids = PointTransformer(opts.transform(), points)(points)
 
+    val kmeans = new Kmeans(centroids, df, fixedSeedForRandom=true)
+    val found = kmeans.run(opts.k())
+    if(opts.showCentroids()) { found._2.foreach(println(_)) }
+    val memberships = kmeans.computeClusterMemberships(found._2)
+    val labels = datapoints.map(_.label).toIndexedSeq
+    println(ClusterConfusionMatrix(labels, labels.distinct.size, memberships._2))
 
   }
 
