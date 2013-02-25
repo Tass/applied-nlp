@@ -19,8 +19,8 @@ case class ClusterPoint(id: String, label: String, point: Point)
  *     Points to be clustered.
  */
 trait PointCreator extends (String => Iterator[ClusterPoint]) {
-  def apply(filename: String): Iterator[ClusterPoint] = io.Source.fromFile(filename).getLines.map(line => processLine(line.split(" "))).flatten
-  def processLine(line: Array[String]): Iterator[ClusterPoint] = Iterator()
+  def apply(filename: String): Iterator[ClusterPoint] = io.Source.fromFile(filename).getLines.map(line => processLine(line)).flatten
+  def processLine(line: String): Iterator[ClusterPoint] = Iterator()
 }
 
 object Point {
@@ -32,7 +32,7 @@ object Point {
  */
 object DirectCreator extends PointCreator {
 
-  override def processLine(line: Array[String]) = line match {
+  override def processLine(line: String) = line.split(" ") match {
       case Array(id, label, x, y, _*) => Iterator(ClusterPoint(id, label, Point(x,y)))
       case _ => Iterator()
     }
@@ -46,12 +46,12 @@ object DirectCreator extends PointCreator {
  */
 object SchoolsCreator extends PointCreator {
 
-  override def processLine(line: Array[String]) = line match {
+  override def processLine(line: String) = " +".r.replaceAllIn("[^ ] [^ ]".r.replaceFirstIn(line, "_"), " ").split(" ") match {
     case Array(name, read_4, math_4, read_6, math_6, _*) =>
       Iterator((read_4, math_4, "4"), (read_6, math_6, "6"))
       .map({case (x, y, label) =>
             ClusterPoint(
-              (name + "_" + label).replace(" ", "_"),
+              name + "_" + label,
               label,
               Point(x, y)
             )})
