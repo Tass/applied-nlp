@@ -26,7 +26,8 @@ trait PointCreator extends (String => Iterator[ClusterPoint]) {
 }
 
 object Point {
-  def apply(x: String, y: String) = nak.cluster.Point(Vector(x,y).map(_.toDouble))
+  def apply(x: String, y:String) = nak.cluster.Point(Vector(x,y).map(_.toDouble))
+  def apply(points:Int*) = nak.cluster.Point(Vector(points:_*).map(_.toDouble))
 }
 
 /**
@@ -84,6 +85,18 @@ object CountriesCreator extends PointCreator {
  */
 class FederalistCreator(simple: Boolean = false) extends PointCreator {
 
+  override def apply(filename: String) = {
+    val texts = FederalistArticleExtractor(filename)
+    texts.map(text =>
+      ClusterPoint(text("id"), text("author"),
+                   if(simple) {
+        extractSimple(text("text"))
+      }
+                   else {
+        extractFull(text("text"))
+      }
+                 )).toIterator
+  }
 
   /**
    * Given the text of an article, compute the frequency of "the", "people"
@@ -91,24 +104,19 @@ class FederalistCreator(simple: Boolean = false) extends PointCreator {
    * "the" as the value of the first dimension, the frequency of "people"
    * for the second, and the frequency of "which" for the third.
    *
-   * @param texts A sequence of Strings, each of which is the text extracted
-   *              for an article (i.e. the "text" field produced by
-   *              FederalistArticleExtractor).
    */
-  def extractSimple(texts: IndexedSeq[String]): IndexedSeq[Point] = {
-    Vector[Point]()
+  def extractSimple(text: String): Point = {
+    val tokens = SimpleTokenizer(text)
+    Point(tokens.count(_=="the"), tokens.count(_=="people"), tokens.count(_=="which"))
   }
 
   /**
    * Given the text of an article, extract features as best you can to try to
    * get good alignment of the produced clusters with the known authors.
    *
-   * @param texts A sequence of Strings, each of which is the text extracted
-   *              for an article (i.e. the "text" field produced by
-   *              FederalistArticleExtractor).
    */
-  def extractFull(texts: IndexedSeq[String]): IndexedSeq[Point] = {
-    Vector[Point]()
+  def extractFull(text: String): Point = {
+    Point(0)
   }
 
 }

@@ -29,6 +29,7 @@ object Cluster {
       case "standard" => DirectCreator(opts.filename())
       case "schools" => SchoolsCreator(opts.filename())
       case "countries" => CountriesCreator(opts.filename())
+      case "fed-simple" => new FederalistCreator(true)(opts.filename())
       case _ => throw new NotImplementedError()
     }).toList // Otherwise the iterator is empty
 

@@ -139,3 +139,25 @@ Ids: BEECHER_4	DAVIS_4	HALE_4	LOVELL_4	ROSS_4
   down in the death numbers are mostly African too. The cluster with
   the lowest birth-rate consists of Europe, Australia, India and
   whatelse you would call "developed".
+
+* Federalist
+  
+** Simple
+   Not impressive. The clustering assigned too many papers to
+   category 3, even more than without the z.
+#+BEGIN_EXAMPLE
+--------------------------------------------------------------------------------
+Confusion matrix.
+Columns give predicted counts. Rows give gold counts.
+--------------------------------------------------------------------------------
+1	0	10	40	|	51	[HAMILTON]
+0	0	0	3	|	3	[HAMILTON AND MADISON]
+0	1	0	4	|	5	[JAY]
+0	3	0	8	|	11	[HAMILTON OR MADISON]
+0	3	10	2	|	15	[MADISON]
+----------------------------------
+1	7	20	57
+[0]	[1]	[2]	[3]
+#+END_EXAMPLE
+
+** Full
