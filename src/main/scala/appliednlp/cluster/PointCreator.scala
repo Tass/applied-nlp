@@ -20,7 +20,7 @@ case class ClusterPoint(id: String, label: String, point: Point)
  */
 trait PointCreator extends (String => Iterator[ClusterPoint]) {
   def apply(filename: String): Iterator[ClusterPoint] = io.Source.fromFile(filename).getLines.map(line => processLine(
-    " +".r.replaceAllIn("""([^0-9 ]) ([^0-9 ])""".r.replaceFirstIn(line, """\1_\2"""), " ").split(" "))
+    " +".r.replaceAllIn("([^0-9 ]) ([^0-9 ])".r.replaceFirstIn(line, """\1_\2"""), " ").split(" "))
                                                                                                 ).flatten
   def processLine(line: Array[String]): Iterator[ClusterPoint] = Iterator()
 }
