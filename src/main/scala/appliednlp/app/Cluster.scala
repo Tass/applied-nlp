@@ -30,8 +30,10 @@ object Cluster {
       case "schools" => SchoolsCreator(opts.filename())
       case "countries" => CountriesCreator(opts.filename())
       case "fed-simple" => new FederalistCreator(true)(opts.filename())
+      case "fed-full" => new FederalistCreator(false)(opts.filename())
       case _ => throw new NotImplementedError()
     }).toList // Otherwise the iterator is empty
+    if (opts.verbose()) { println(datapoints) }
 
     val df = DistanceFunction(opts.distance())
     val points = datapoints.map(_.point).toIndexedSeq

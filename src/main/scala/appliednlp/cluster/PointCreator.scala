@@ -27,7 +27,7 @@ trait PointCreator extends (String => Iterator[ClusterPoint]) {
 
 object Point {
   def apply(x: String, y:String) = nak.cluster.Point(Vector(x,y).map(_.toDouble))
-  def apply(points:Int*) = nak.cluster.Point(Vector(points:_*).map(_.toDouble))
+  def apply(points:Seq[Double]) = nak.cluster.Point(Vector(points:_*))
 }
 
 /**
@@ -107,16 +107,20 @@ class FederalistCreator(simple: Boolean = false) extends PointCreator {
    */
   def extractSimple(text: String): Point = {
     val tokens = SimpleTokenizer(text)
-    Point(tokens.count(_=="the"), tokens.count(_=="people"), tokens.count(_=="which"))
+    Point(Seq(tokens.count(_=="the"), tokens.count(_=="people"), tokens.count(_=="which")).map(_.toDouble))
   }
 
+  lazy val stopwords = io.Source.fromFile("data/cluster/federalist/english.stop").split('\n').map(_.mkString).toList
   /**
    * Given the text of an article, extract features as best you can to try to
    * get good alignment of the produced clusters with the known authors.
    *
    */
   def extractFull(text: String): Point = {
-    Point(0)
+    val tokens = SimpleTokenizer(text)
+    Point(
+      stopwords.map(stop => tokens.count(stop ==_).toDouble/tokens.size)
+    )
   }
 
 }
