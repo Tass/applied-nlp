@@ -13,7 +13,8 @@ object ConfidenceScorer {
   def main(args: Array[String]) {
     val opts = ConfidenceScorerOpts(args)
 
-    val lines = io.Source.fromFile(opts.goldFile()).getLines.map(_.split(" ").last)
+    val lines = io.Source.fromFile(opts.goldFile()).getLines
+      .map(_.split(" ")(0)) // change this line based on your input file :-/
       .zip(io.Source.fromFile(opts.predictFile()).getLines
       .map({line => val splitted = line.split(" ")
             // Parse the predicted data
@@ -28,7 +29,7 @@ object ConfidenceScorer {
 
     val size = lines.size
     val result = Seq(lines.take(size/3), lines.drop(size/3).take(size/3), lines.drop(size/3*2)).map(
-      lines => lines.count(_._2).toDouble/lines.size
+      lines => lines.count(_._2).toDouble/lines.size * 100
       )
     val top = result(2)
     val middle = result(1)
