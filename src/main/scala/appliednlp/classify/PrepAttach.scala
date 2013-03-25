@@ -104,15 +104,15 @@ class ExtendedFeatureExtractor(bitvectors: Map[String, BitVector])
 
   lazy val stemmer = new PorterStemmer
 
+
+  // A rough approximation.
+  val numbers = """^([^a-zA-Z]*)""".r
+  val CAPS = """^([^a-z]*)""".r
+  val halfCaps = """^([A-Z]+.*)""".r
+  val pronouns = ("(" + io.Source.fromInputStream(getClass.getResourceAsStream("/pronouns")).getLines.mkString("|") + ")").r
+
   override def apply(
     verb: String, noun: String, prep: String, prepObj: String): Iterable[AttrVal] = {
-
-    // A rough approximation.
-    val numbers = """^([^a-zA-Z]*)""".r
-    val CAPS = """^([^a-z]*)""".r
-    val halfCaps = """^([A-Z]+.*)""".r
-    val pronounsJoined = io.Source.fromInputStream(getClass.getResourceAsStream("/resources/pronouns")).getLines.mkString("|")
-    val pronouns = s"($pronounsJoined)".r
 
     // Use the basic feature extractor to get the basic features (no need to 
     // duplicate effort and specify it again).
