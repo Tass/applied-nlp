@@ -186,6 +186,3 @@ object BitVector {
   def apply(bitstring: String) =
     new BitVector(bitstring.split("").drop(1).map(_.toInt).toIndexedSeq)
 }
-
-
-
