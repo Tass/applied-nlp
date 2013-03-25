@@ -107,15 +107,30 @@ class ExtendedFeatureExtractor(bitvectors: Map[String, BitVector])
   override def apply(
     verb: String, noun: String, prep: String, prepObj: String): Iterable[AttrVal] = {
 
+    // A rough approximation.
+    val numbers = """^([^a-zA-Z]*)""".r
+    val CAPS = """^([^a-z]*)""".r
+    val halfCaps = """^([A-Z]+.*)""".r
+    val pronounsJoined = io.Source.fromInputStream(getClass.getResourceAsStream("/resources/pronouns")).getLines.mkString("|")
+    val pronouns = s"($pronounsJoined)".r
+
     // Use the basic feature extractor to get the basic features (no need to 
     // duplicate effort and specify it again).
-    val basicFeatures = BasicFeatureExtractor(verb, noun, prep, prepObj)
-
-    // Extract more features
-
-    // Return the features. You should of course add your features to basic ones.
-    basicFeatures
+    BasicFeatureExtractor(verb, noun, prep, prepObj) ++
+    // The stemmed elements
+    extract(("verb_stem", verb), ("noun_stem", noun), ("obj_stem", prepObj))(stemmer(_)) ++
+    // Numbers
+    extract(("noun_form", noun), ("obj_form", prepObj))({
+      case numbers(_) => "number"
+      case CAPS(_) => "XX"
+      case halfCaps(_) => "Xx"
+      case pronouns(_) => "pro"
+      case _ => "xx"
+    })
+    
   }
+
+  def extract(features: (String, String)*)(f: String => String) = features.map({case (name, value) => AttrVal(name, f(value))})
 
 }
 
