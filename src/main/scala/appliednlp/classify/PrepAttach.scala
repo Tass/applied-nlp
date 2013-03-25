@@ -126,11 +126,16 @@ class ExtendedFeatureExtractor(bitvectors: Map[String, BitVector])
       case halfCaps(_) => "Xx"
       case pronouns(_) => "pro"
       case _ => "xx"
-    })
+    }) ++
+    // bits
+    (0 to 31).map(cutoff => extract((s"noun_bit_$cutoff", noun), (s"verb_bit_$cutoff", verb), (s"obj_bit_$cutoff", prepObj))(bitvectors(_)(cutoff).toString)).flatten ++ 
+    // bitvectors
+    (1 to 31).map(cutoff => extract((s"noun_bit_$cutoff", noun), (s"verb_bit_$cutoff", verb), (s"obj_bit_$cutoff", prepObj))(bitvectors(_).keepTopBits(cutoff).toString)).flatten ++
+    extract(("verb+noun", Seq(verb, noun)))(_.map(stemmer(_)).mkString("+"))
     
   }
 
-  def extract(features: (String, String)*)(f: String => String) = features.map({case (name, value) => AttrVal(name, f(value))})
+  def extract[T](features: (String, T)*)(f: T => String) = features.map({case (name, value) => AttrVal(name, f(value))})
 
 }
 
