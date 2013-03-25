@@ -1,5 +1,12 @@
 #+AUTHOR: Simon Hafner
 #+TITLE: anlp homework #4
+#+OPTIONS: *:nil
+#+OPTIONS: toc:nil
+
+* Fork
+https://github.com/Tass/applied-nlp/tree/hw4
+This file is available in org source there. The raw data for the
+graphs is in that file as well.
 
 * Tennis
 
